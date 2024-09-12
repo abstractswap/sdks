@@ -246,6 +246,16 @@ const ZKSYNC_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x99c56385daBCE3E81d8499d0b8d0257aBC07E8A3',
 }
 
+const ABSTRACT_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x84c0897Ee2B89cb183139EbC507826167F15D389',
+  multicallAddress: '0xeBd1e414eBb98522cfd932104bA41FAc10A4eF35',
+  quoterAddress: '0xf8E9Ae93ae5674FF8E3ebc97F14699b12560F954',
+  v3MigratorAddress: '0x14CaDB4C8d0435AcA08e36c35BEDab54872B6585',
+  nonfungiblePositionManagerAddress: '0x16577d38b648533A6DE9E58d35726746d8E63181',
+  tickLensAddress: '0xb2B56d2E9Ddb4698B14D35572569eb3d0f7F984C',
+  swapRouter02Address: '0xE41cdAE209E91383d7adC7dB030E9aF5DDC43882',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -269,6 +279,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.ZKSYNC]: ZKSYNC_ADDRESSES,
+  [ChainId.ABSTRACT_TESTNET]: ABSTRACT_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
