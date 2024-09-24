@@ -20,10 +20,10 @@
     "test": "tsdx test"
   },
   "dependencies": {
-    "@abstractswap/sdk-core": "workspace:*",
-    "@abstractswap/v2-sdk": "workspace:*",
-    "@abstractswap/v3-sdk": "workspace:*",
-    "@abstractswap/v4-sdk": "workspace:*",
+    "@abstractswap/sdk-core": "",
+    "@abstractswap/v2-sdk": "",
+    "@abstractswap/v3-sdk": "",
+    "@abstractswap/v4-sdk": "",
     "@ethersproject/abi": "^5.5.0",
     "@uniswap/swap-router-contracts": "^1.3.0"
   },

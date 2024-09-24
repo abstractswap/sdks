@@ -28,7 +28,7 @@
     "tsdx": "^0.14.1"
   },
   "dependencies": {
-    "@abstractswap/sdk-core": "workspace:*",
+    "@abstractswap/sdk-core": "",
     "@ethersproject/bytes": "^5.7.0",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",

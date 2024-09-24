@@ -12,12 +12,12 @@ update_package_json() {
     cp "$file" "$temp_file"
     
     for pkg in $PACKAGES; do
-        # Update dependencies
-        sed -i '' "s|\"@abstractswap/$pkg\": \"[^\"]*\"|\"@abstractswap/$pkg\": \"workspace:*\"|g" "$temp_file"
-        # Update devDependencies
-        sed -i '' "s|\"@abstractswap/$pkg\": \"[^\"]*\"|\"@abstractswap/$pkg\": \"workspace:*\"|g" "$temp_file"
-        # Update peerDependencies
-        sed -i '' "s|\"@abstractswap/$pkg\": \"[^\"]*\"|\"@abstractswap/$pkg\": \"workspace:*\"|g" "$temp_file"
+        # Remove workspace:* from dependencies
+        sed -i '' "s|\"@abstractswap/$pkg\": \"workspace:\\*\"|\"@abstractswap/$pkg\": \"\"|g" "$temp_file"
+        # Remove workspace:* from devDependencies
+        sed -i '' "s|\"@abstractswap/$pkg\": \"workspace:\\*\"|\"@abstractswap/$pkg\": \"\"|g" "$temp_file"
+        # Remove workspace:* from peerDependencies
+        sed -i '' "s|\"@abstractswap/$pkg\": \"workspace:\\*\"|\"@abstractswap/$pkg\": \"\"|g" "$temp_file"
     done
     
     # Replace the original file with the updated one
