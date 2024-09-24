@@ -19,7 +19,7 @@
     "node": ">=10",
     "yarn": ">=3.2.3"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@4.5.0",
   "private": true,
   "scripts": {
     "g:check:deps:mismatch": "manypkg check",
