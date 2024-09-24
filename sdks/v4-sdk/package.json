@@ -24,8 +24,8 @@
     "test": "tsdx test"
   },
   "dependencies": {
-    "@abstractswap/sdk-core": "",
-    "@abstractswap/v3-sdk": "",
+    "@abstractswap/sdk-core": "0.0.1",
+    "@abstractswap/v3-sdk": "0.0.1",
     "@ethersproject/solidity": "^5.0.9",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
