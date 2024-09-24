@@ -30,13 +30,13 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
-    "@abstractswap/permit2-sdk": "^1.3.0",
-    "@abstractswap/router-sdk": "^1.10.0",
-    "@abstractswap/sdk-core": "^5.3.1",
+    "@abstractswap/permit2-sdk": "workspace:*",
+    "@abstractswap/router-sdk": "workspace:*",
+    "@abstractswap/sdk-core": "workspace:*",
+    "@abstractswap/v2-sdk": "workspace:*",
+    "@abstractswap/v3-sdk": "workspace:*",
+    "@abstractswap/v4-sdk": "workspace:*",
     "@uniswap/universal-router": "1.6.0",
-    "@abstractswap/v2-sdk": "^4.4.1",
-    "@abstractswap/v3-sdk": "^3.13.1",
-    "@abstractswap/v4-sdk": "^1.0.0",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
   },

@@ -28,10 +28,10 @@
     "tsdx": "^0.14.1"
   },
   "dependencies": {
+    "@abstractswap/sdk-core": "workspace:*",
     "@ethersproject/bytes": "^5.7.0",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
-    "@abstractswap/sdk-core": "^5.0.0",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.0",
     "typechain": "^8.1.0"

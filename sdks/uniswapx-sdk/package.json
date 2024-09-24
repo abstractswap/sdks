@@ -28,10 +28,10 @@
     "typechain": "typechain --target=ethers-v5 --out-dir src/contracts --glob ./abis/**/*.json"
   },
   "dependencies": {
+    "@abstractswap/permit2-sdk": "workspace:*",
+    "@abstractswap/sdk-core": "workspace:*",
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
-    "@abstractswap/permit2-sdk": "^1.2.1",
-    "@abstractswap/sdk-core": "^5.0.0",
     "ethers": "^5.7.0"
   },
   "devDependencies": {
