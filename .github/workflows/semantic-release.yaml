@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7
         with:
           cache: yarn
-          node-version: 20
+          node-version: 18
 
       - name: Install dependencies
         run: yarn --immutable
@@ -38,6 +38,7 @@ jobs:
 
       - name: Release Needed SDK's
         env:
+          NPM_CONFIG_USERCONFIG: /dev/null
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn g:release -- --debug --legacy-peer-deps
