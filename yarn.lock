@@ -6821,7 +6821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^5.0.1, cross-spawn@npm:^5.1.0":
+"cross-spawn@npm:^5.1.0":
   version: 5.1.0
   resolution: "cross-spawn@npm:5.1.0"
   dependencies:
@@ -7038,7 +7038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^3.1.0, debug@npm:^3.2.7":
+"debug@npm:^3.2.7":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
   dependencies:
@@ -8420,21 +8420,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "execa@npm:0.8.0"
-  dependencies:
-    cross-spawn: "npm:^5.0.1"
-    get-stream: "npm:^3.0.0"
-    is-stream: "npm:^1.1.0"
-    npm-run-path: "npm:^2.0.0"
-    p-finally: "npm:^1.0.0"
-    signal-exit: "npm:^3.0.0"
-    strip-eof: "npm:^1.0.0"
-  checksum: 10/1e255f4381714402aa85605057b9a8bbb2ea6b59eae12affad3b1233aae0109cece49f1f842453e97976a537db62a0d91969d52557bd1a66badd01a926b33b67
-  languageName: node
-  linkType: hard
-
 "execa@npm:^1.0.0":
   version: 1.0.0
   resolution: "execa@npm:1.0.0"
@@ -8485,7 +8470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^5.0.0":
+"execa@npm:^5.0.0, execa@npm:^5.1.1":
   version: 5.1.1
   resolution: "execa@npm:5.1.1"
   dependencies:
@@ -8788,6 +8773,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"file-url@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "file-url@npm:3.0.0"
+  checksum: 10/f15c1bdd81df1a09238f3411f877274d7849703df837ec327c4d1df631314f60036cb700a59d826d8c96b79ff66429d3c758480005e1899c00961541b98d5bfe
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^4.0.0":
   version: 4.0.0
   resolution: "fill-range@npm:4.0.0"
@@ -8842,6 +8834,15 @@ __metadata:
   dependencies:
     locate-path: "npm:^2.0.0"
   checksum: 10/43284fe4da09f89011f08e3c32cd38401e786b19226ea440b75386c1b12a4cb738c94969808d53a84f564ede22f732c8409e3cfc3f7fb5b5c32378ad0bbf28bd
+  languageName: node
+  linkType: hard
+
+"find-up@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "find-up@npm:3.0.0"
+  dependencies:
+    locate-path: "npm:^3.0.0"
+  checksum: 10/38eba3fe7a66e4bc7f0f5a1366dc25508b7cfc349f852640e3678d26ad9a6d7e2c43eff0a472287de4a9753ef58f066a0ea892a256fa3636ad51b3fe1e17fae9
   languageName: node
   linkType: hard
 
@@ -9074,6 +9075,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^10.0.1":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: "npm:^4.2.0"
+    jsonfile: "npm:^6.0.1"
+    universalify: "npm:^2.0.0"
+  checksum: 10/05ce2c3b59049bcb7b52001acd000e44b3c4af4ec1f8839f383ef41ec0048e3cfa7fd8a637b1bddfefad319145db89be91f4b7c1db2908205d38bf91e7d1d3b7
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^11.0.0":
   version: 11.2.0
   resolution: "fs-extra@npm:11.2.0"
@@ -9246,13 +9258,6 @@ __metadata:
   version: 6.0.0
   resolution: "get-stdin@npm:6.0.0"
   checksum: 10/593f6fb4fff4c8d49ec93a07c430c1edc6bd4fe7e429d222b5da2f367276a98809af9e90467ad88a2d83722ff95b9b35bbaba02b56801421c5e3668173fe12b4
-  languageName: node
-  linkType: hard
-
-"get-stream@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "get-stream@npm:3.0.0"
-  checksum: 10/de14fbb3b4548ace9ab6376be852eef9898c491282e29595bc908a1814a126d3961b11cd4b7be5220019fe3b2abb84568da7793ad308fc139925a217063fa159
   languageName: node
   linkType: hard
 
@@ -12048,6 +12053,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"locate-path@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "locate-path@npm:3.0.0"
+  dependencies:
+    p-locate: "npm:^3.0.0"
+    path-exists: "npm:^3.0.0"
+  checksum: 10/53db3996672f21f8b0bf2a2c645ae2c13ffdae1eeecfcd399a583bce8516c0b88dcb4222ca6efbbbeb6949df7e46860895be2c02e8d3219abd373ace3bfb4e11
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^5.0.0":
   version: 5.0.0
   resolution: "locate-path@npm:5.0.0"
@@ -13823,7 +13838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^1.1.0, p-limit@npm:^1.2.0":
+"p-limit@npm:^1.1.0":
   version: 1.3.0
   resolution: "p-limit@npm:1.3.0"
   dependencies:
@@ -13832,7 +13847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^2.1.0, p-limit@npm:^2.2.0, p-limit@npm:^2.2.1":
+"p-limit@npm:^2.0.0, p-limit@npm:^2.1.0, p-limit@npm:^2.2.0, p-limit@npm:^2.2.1":
   version: 2.3.0
   resolution: "p-limit@npm:2.3.0"
   dependencies:
@@ -13841,7 +13856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^3.0.2":
+"p-limit@npm:^3.0.2, p-limit@npm:^3.1.0":
   version: 3.1.0
   resolution: "p-limit@npm:3.1.0"
   dependencies:
@@ -13865,6 +13880,15 @@ __metadata:
   dependencies:
     p-limit: "npm:^1.1.0"
   checksum: 10/e2dceb9b49b96d5513d90f715780f6f4972f46987dc32a0e18bc6c3fc74a1a5d73ec5f81b1398af5e58b99ea1ad03fd41e9181c01fa81b4af2833958696e3081
+  languageName: node
+  linkType: hard
+
+"p-locate@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "p-locate@npm:3.0.0"
+  dependencies:
+    p-limit: "npm:^2.0.0"
+  checksum: 10/83991734a9854a05fe9dbb29f707ea8a0599391f52daac32b86f08e21415e857ffa60f0e120bfe7ce0cc4faf9274a50239c7895fc0d0579d08411e513b83a4ae
   languageName: node
   linkType: hard
 
@@ -14270,12 +14294,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-up@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "pkg-up@npm:2.0.0"
+"pkg-up@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "pkg-up@npm:3.1.0"
   dependencies:
-    find-up: "npm:^2.1.0"
-  checksum: 10/de4b418175281a082e366ce1a919f032520ee53cf421578b35173f03816f6ec4c19e1552066840bb0988c3e1215859653948efd6ca3507a23f4f44229269500d
+    find-up: "npm:^3.0.0"
+  checksum: 10/5bac346b7c7c903613c057ae3ab722f320716199d753f4a7d053d38f2b5955460f3e6ab73b4762c62fd3e947f58e04f1343e92089e7bb6091c90877406fcd8c8
   languageName: node
   linkType: hard
 
@@ -14589,10 +14613,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ramda@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "ramda@npm:0.25.0"
-  checksum: 10/f16715fe64e74925fe209746bffe945e20f95a01c82d32aadbd255d1053fc0d1f0a4233005e302a80acaa822d89764a793f51e69c10930efbb25cb8d23c97d8f
+"ramda@npm:^0.27.2":
+  version: 0.27.2
+  resolution: "ramda@npm:0.27.2"
+  checksum: 10/75b359ed0e5374a12aa2c31ad9af26685bef0559eb6ae6ae7a3ec49fb50576913d740f54ac0cf861b5cc3df7ffb5313a1c28dc775d7cd9e3571162a7a91b47db
   languageName: node
   linkType: hard
 
@@ -15528,7 +15552,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^3.4.1"
     husky: "npm:^8.0.3"
     semantic-release: "npm:^20.1.3"
-    semantic-release-monorepo: "npm:7.0.5"
+    semantic-release-monorepo: "npm:8.0.2"
     semantic-release-plugin-decorators: "npm:4.0.0"
     syncpack: "npm:^8.5.14"
     turbo: "npm:1.10.16"
@@ -15547,38 +15571,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo@npm:7.0.5":
-  version: 7.0.5
-  resolution: "semantic-release-monorepo@npm:7.0.5"
+"semantic-release-monorepo@npm:8.0.2":
+  version: 8.0.2
+  resolution: "semantic-release-monorepo@npm:8.0.2"
   dependencies:
-    debug: "npm:^3.1.0"
-    execa: "npm:^0.8.0"
-    p-limit: "npm:^1.2.0"
-    pkg-up: "npm:^2.0.0"
-    ramda: "npm:^0.25.0"
-    read-pkg: "npm:^5.0.0"
-    semantic-release-plugin-decorators: "npm:^3.0.0"
+    debug: "npm:^4.3.4"
+    execa: "npm:^5.1.1"
+    file-url: "npm:^3.0.0"
+    fs-extra: "npm:^10.0.1"
+    get-stream: "npm:^6.0.1"
+    git-log-parser: "npm:^1.2.0"
+    p-each-series: "npm:^2.1.0"
+    p-limit: "npm:^3.1.0"
+    pkg-up: "npm:^3.1.0"
+    ramda: "npm:^0.27.2"
+    read-pkg: "npm:^5.2.0"
+    semantic-release-plugin-decorators: "npm:^4.0.0"
+    tempy: "npm:1.0.1"
   peerDependencies:
-    semantic-release: ">=15.11.x"
-  checksum: 10/a719202c7fbfb7f2ace561181fe01d0710b0e9c95810b499ab2a3d801dcb21579de2b3bcb801b022aae1b47a5528ddec80cd3a6f65db7897fe616a579de5f1b3
+    semantic-release: ">=22.0.7"
+  checksum: 10/983fed8d91fa07710f5479d93e81bea2ea210fd4e47a947d4356e86462a174d7a67d4ab8a423dab2398ab9b134cf826cb5fa36bdee18a1e8fc03cedca923bab8
   languageName: node
   linkType: hard
 
-"semantic-release-plugin-decorators@npm:4.0.0":
+"semantic-release-plugin-decorators@npm:4.0.0, semantic-release-plugin-decorators@npm:^4.0.0":
   version: 4.0.0
   resolution: "semantic-release-plugin-decorators@npm:4.0.0"
   peerDependencies:
     semantic-release: ">20"
   checksum: 10/02b97a4b1221f3cb6d3915e5d02c7af773e528566a851d74b4aacc435b319cda505c1bcca313311eb6c2e203e3cace185c33586ccea1209637d1b0695df61fa2
-  languageName: node
-  linkType: hard
-
-"semantic-release-plugin-decorators@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "semantic-release-plugin-decorators@npm:3.0.3"
-  peerDependencies:
-    semantic-release: ">=11 < 20"
-  checksum: 10/84e79b01565279c9d004af5fd51499ca815e6a009844536f9589c743e05281f30faf899e8d9abe38bc42371bf568e9b4d9bfe5bf5b7496dc535db08a6997ed91
   languageName: node
   linkType: hard
 
@@ -16719,7 +16740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tempy@npm:^1.0.0":
+"tempy@npm:1.0.1, tempy@npm:^1.0.0":
   version: 1.0.1
   resolution: "tempy@npm:1.0.1"
   dependencies:
