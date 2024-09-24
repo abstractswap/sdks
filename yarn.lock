@@ -5,7 +5,17 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@abstractswap/permit2-sdk@npm:, @abstractswap/permit2-sdk@npm:0.0.1":
+"@abstractswap/permit2-sdk@npm:":
+  version: 1.0.0
+  resolution: "@abstractswap/permit2-sdk@npm:1.0.0"
+  dependencies:
+    ethers: ^5.7.0
+    tiny-invariant: ^1.1.0
+  checksum: d42c78e77b5d31e7fc48ae805f80785cda4ae4f8302253ee7f76c39bcda2a74b931077773be7f4287ec346bc7dd93d7a652766a71919269f02474948b34c1caf
+  languageName: node
+  linkType: hard
+
+"@abstractswap/permit2-sdk@npm:0.0.1":
   version: 0.0.1
   resolution: "@abstractswap/permit2-sdk@npm:0.0.1"
   dependencies:
@@ -57,7 +67,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/sdk-core@npm:, @abstractswap/sdk-core@npm:0.0.1":
+"@abstractswap/sdk-core@npm:":
+  version: 1.0.0
+  resolution: "@abstractswap/sdk-core@npm:1.0.0"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/keccak256": 5.7.0
+    "@ethersproject/strings": 5.7.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: 152b3c18f3f33ad125eb2a30104feb30756beac2e767c35086028772ba0427120e37bf884b1cd40acc6e6cea21e0b751bb3ac3b30c55160d0fe9f86c4350b815
+  languageName: node
+  linkType: hard
+
+"@abstractswap/sdk-core@npm:0.0.1":
   version: 0.0.1
   resolution: "@abstractswap/sdk-core@npm:0.0.1"
   dependencies:
@@ -154,7 +181,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/v2-sdk@npm:, @abstractswap/v2-sdk@npm:0.0.1":
+"@abstractswap/v2-sdk@npm:":
+  version: 1.0.0
+  resolution: "@abstractswap/v2-sdk@npm:1.0.0"
+  dependencies:
+    "@abstractswap/sdk-core": 0.0.1
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/solidity": ^5.0.9
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: 951c09abeb684a7ddda9a95e26bf76f785218dfe48fee7364a634e28b08d5e9d5a6de1aad1a680892a924a10052668a6e3b1a926a04e0c72b6df56940886ce8d
+  languageName: node
+  linkType: hard
+
+"@abstractswap/v2-sdk@npm:0.0.1":
   version: 0.0.1
   resolution: "@abstractswap/v2-sdk@npm:0.0.1"
   dependencies:
@@ -219,7 +259,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/v4-sdk@npm:, @abstractswap/v4-sdk@npm:0.0.1":
+"@abstractswap/v4-sdk@npm:":
+  version: 1.0.0
+  resolution: "@abstractswap/v4-sdk@npm:1.0.0"
+  dependencies:
+    "@abstractswap/sdk-core": 0.0.1
+    "@abstractswap/v3-sdk": 0.0.1
+    "@ethersproject/solidity": ^5.0.9
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: f88bbb0d7c5e809eb85c40a97eb1f50dbdc667b5f9b8bdac0cf0a81e831750da429b7b5a87dc440530b8d0f557c3842e703c5b1d0c97bffcbd8b501f53d864a8
+  languageName: node
+  linkType: hard
+
+"@abstractswap/v4-sdk@npm:0.0.1":
   version: 0.0.1
   resolution: "@abstractswap/v4-sdk@npm:0.0.1"
   dependencies:
