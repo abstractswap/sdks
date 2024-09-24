@@ -7,7 +7,7 @@ import {
   validateAndParseAddress,
   Currency,
   NativeCurrency,
-} from '@uniswap/sdk-core'
+} from '@abstractswap/sdk-core'
 import { Position } from './entities/position'
 import { MethodParameters, toHex } from './utils/calldata'
 import { Interface } from '@ethersproject/abi'

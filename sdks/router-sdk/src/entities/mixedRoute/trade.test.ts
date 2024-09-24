@@ -1,5 +1,5 @@
-import { Percent, Price, sqrt, Token, CurrencyAmount, TradeType, WETH9, Ether, Currency } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Percent, Price, sqrt, Token, CurrencyAmount, TradeType, WETH9, Ether, Currency } from '@abstractswap/sdk-core'
+import { Pair } from '@abstractswap/v2-sdk'
 import {
   encodeSqrtRatioX96,
   FeeAmount,
@@ -7,8 +7,8 @@ import {
   Pool as V3Pool,
   TickMath,
   TICK_SPACINGS,
-} from '@uniswap/v3-sdk'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+} from '@abstractswap/v3-sdk'
+import { Pool as V4Pool } from '@abstractswap/v4-sdk'
 import JSBI from 'jsbi'
 import { MixedRouteSDK } from './route'
 import { MixedRouteTrade } from './trade'

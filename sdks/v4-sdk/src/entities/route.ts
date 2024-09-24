@@ -1,6 +1,6 @@
 import invariant from 'tiny-invariant'
 
-import { Currency, Price } from '@uniswap/sdk-core'
+import { Currency, Price } from '@abstractswap/sdk-core'
 import { Pool } from './pool'
 
 /**

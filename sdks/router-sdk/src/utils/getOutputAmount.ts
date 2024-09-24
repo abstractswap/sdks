@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+import { Currency, CurrencyAmount } from '@abstractswap/sdk-core'
+import { Pool as V4Pool } from '@abstractswap/v4-sdk'
 import { TPool } from './TPool'
 
 export async function getOutputAmount(

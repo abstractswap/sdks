@@ -1,10 +1,10 @@
 // @ts-nocheck
 
-import { BigintIsh, Percent, Price, CurrencyAmount, Currency } from '@uniswap/sdk-core'
+import { BigintIsh, Percent, Price, CurrencyAmount, Currency } from '@abstractswap/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { Pool } from './pool'
-import { TickMath } from '@uniswap/v3-sdk'
+import { TickMath } from '@abstractswap/v3-sdk'
 
 interface PositionConstructorArgs {
   pool: Pool

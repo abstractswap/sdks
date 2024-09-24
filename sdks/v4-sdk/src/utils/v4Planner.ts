@@ -1,5 +1,5 @@
 import { defaultAbiCoder } from 'ethers/lib/utils'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { Currency, Percent, TradeType } from '@abstractswap/sdk-core'
 import { Trade } from '../entities/trade'
 import { ADDRESS_ZERO } from '../internalConstants'
 import { encodeRouteToPath } from './encodeRouteToPath'

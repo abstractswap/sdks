@@ -1,5 +1,5 @@
-import { Ether, Token } from '@uniswap/sdk-core'
-import { encodeSqrtRatioX96 } from '@uniswap/v3-sdk'
+import { Ether, Token } from '@abstractswap/sdk-core'
+import { encodeSqrtRatioX96 } from '@abstractswap/v3-sdk'
 import { Route } from '../entities/route'
 import { Pool } from '../entities/pool'
 import { encodeRouteToPath } from './encodeRouteToPath'
