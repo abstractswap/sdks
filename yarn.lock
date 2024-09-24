@@ -37,21 +37,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/router-sdk@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@abstractswap/router-sdk@npm:0.0.1"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:"
-    "@abstractswap/v2-sdk": "npm:"
-    "@abstractswap/v3-sdk": "npm:"
-    "@abstractswap/v4-sdk": "npm:"
-    "@ethersproject/abi": "npm:^5.5.0"
-    "@uniswap/swap-router-contracts": "npm:^1.3.0"
-  checksum: 10/35644bdd89869207f6a98d3854940d18479f7c5eccf1224c7fc819b9b0007eff6fb265d8dfff39d7ba695397414c7870efb445706f3b5630da6a52dfbfbe0a58
-  languageName: node
-  linkType: hard
-
-"@abstractswap/router-sdk@workspace:sdks/router-sdk":
+"@abstractswap/router-sdk@workspace:*, @abstractswap/router-sdk@workspace:sdks/router-sdk":
   version: 0.0.0-use.local
   resolution: "@abstractswap/router-sdk@workspace:sdks/router-sdk"
   dependencies:
@@ -67,41 +53,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/sdk-core@npm:":
-  version: 1.0.0
-  resolution: "@abstractswap/sdk-core@npm:1.0.0"
-  dependencies:
-    "@ethersproject/address": "npm:^5.0.2"
-    "@ethersproject/bytes": "npm:^5.7.0"
-    "@ethersproject/keccak256": "npm:5.7.0"
-    "@ethersproject/strings": "npm:5.7.0"
-    big.js: "npm:^5.2.2"
-    decimal.js-light: "npm:^2.5.0"
-    jsbi: "npm:^3.1.4"
-    tiny-invariant: "npm:^1.1.0"
-    toformat: "npm:^2.0.0"
-  checksum: 10/e1272189a9ef847426ea2568f69e7b4eaa6de43b334f1562ba8829c04ff62c42a6794044212e4191bba148b23de1aef03b199c816ceef46ba641a04c23ec3538
-  languageName: node
-  linkType: hard
-
-"@abstractswap/sdk-core@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@abstractswap/sdk-core@npm:0.0.1"
-  dependencies:
-    "@ethersproject/address": "npm:^5.0.2"
-    "@ethersproject/bytes": "npm:^5.7.0"
-    "@ethersproject/keccak256": "npm:5.7.0"
-    "@ethersproject/strings": "npm:5.7.0"
-    big.js: "npm:^5.2.2"
-    decimal.js-light: "npm:^2.5.0"
-    jsbi: "npm:^3.1.4"
-    tiny-invariant: "npm:^1.1.0"
-    toformat: "npm:^2.0.0"
-  checksum: 10/6c9eceb5a108f78e3775888a773324b265f00212863b99b7f14ee72282302c9c4132107ffd6a3cafa8a17f803eea43dadeee711d198fb3283a4cf6b3b8965ce7
-  languageName: node
-  linkType: hard
-
-"@abstractswap/sdk-core@workspace:sdks/sdk-core":
+"@abstractswap/sdk-core@workspace:*, @abstractswap/sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@abstractswap/sdk-core@workspace:sdks/sdk-core"
   dependencies:
@@ -181,33 +133,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/v2-sdk@npm:":
-  version: 1.0.0
-  resolution: "@abstractswap/v2-sdk@npm:1.0.0"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:0.0.1"
-    "@ethersproject/address": "npm:^5.0.2"
-    "@ethersproject/solidity": "npm:^5.0.9"
-    tiny-invariant: "npm:^1.1.0"
-    tiny-warning: "npm:^1.0.3"
-  checksum: 10/693a675521ee337d884bafcc47310e0fd75632a9d69c4976b2b4d818af963d4f982394187c94ef7a704edb92e26c80ba50f04c84c3e0adb2bba38caa52da5c68
-  languageName: node
-  linkType: hard
-
-"@abstractswap/v2-sdk@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@abstractswap/v2-sdk@npm:0.0.1"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:"
-    "@ethersproject/address": "npm:^5.0.2"
-    "@ethersproject/solidity": "npm:^5.0.9"
-    tiny-invariant: "npm:^1.1.0"
-    tiny-warning: "npm:^1.0.3"
-  checksum: 10/ebdc7b1d0bd4c6a6a02bc146f7d55361afcccf37de51479c81db2efad2a31d0b02eb70a91762275f5f3bd938dd970ce8ef96dbcbe659239b6df73702dd928127
-  languageName: node
-  linkType: hard
-
-"@abstractswap/v2-sdk@workspace:sdks/v2-sdk":
+"@abstractswap/v2-sdk@workspace:*, @abstractswap/v2-sdk@workspace:sdks/v2-sdk":
   version: 0.0.0-use.local
   resolution: "@abstractswap/v2-sdk@workspace:sdks/v2-sdk"
   dependencies:
@@ -224,23 +150,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/v3-sdk@npm:, @abstractswap/v3-sdk@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@abstractswap/v3-sdk@npm:0.0.1"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:"
-    "@ethersproject/abi": "npm:^5.5.0"
-    "@ethersproject/solidity": "npm:^5.0.9"
-    "@uniswap/swap-router-contracts": "npm:^1.3.0"
-    "@uniswap/v3-periphery": "npm:^1.1.1"
-    "@uniswap/v3-staker": "npm:1.0.0"
-    tiny-invariant: "npm:^1.1.0"
-    tiny-warning: "npm:^1.0.3"
-  checksum: 10/c3fa17eefaaf81c09f0a3dd67050a9ba35b98a086778ba5b45ae02fff4b925db656400c5bd93a91d4a770dcd03d330f3ebe5bb6675834e34bcb58aa471779a4b
-  languageName: node
-  linkType: hard
-
-"@abstractswap/v3-sdk@workspace:sdks/v3-sdk":
+"@abstractswap/v3-sdk@workspace:*, @abstractswap/v3-sdk@workspace:sdks/v3-sdk":
   version: 0.0.0-use.local
   resolution: "@abstractswap/v3-sdk@workspace:sdks/v3-sdk"
   dependencies:
@@ -259,33 +169,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@abstractswap/v4-sdk@npm:":
-  version: 1.0.0
-  resolution: "@abstractswap/v4-sdk@npm:1.0.0"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:0.0.1"
-    "@abstractswap/v3-sdk": "npm:0.0.1"
-    "@ethersproject/solidity": "npm:^5.0.9"
-    tiny-invariant: "npm:^1.1.0"
-    tiny-warning: "npm:^1.0.3"
-  checksum: 10/5ec0255a596b5a7a8b1cb312bc8a521d92282c7a771d26f3c00218bdf18124d5f6e7d73da9a82e83bc0309bbbbeefcab7ba6e81b35f8cc098e7e4cd4a04a3e18
-  languageName: node
-  linkType: hard
-
-"@abstractswap/v4-sdk@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@abstractswap/v4-sdk@npm:0.0.1"
-  dependencies:
-    "@abstractswap/sdk-core": "npm:"
-    "@abstractswap/v3-sdk": "npm:"
-    "@ethersproject/solidity": "npm:^5.0.9"
-    tiny-invariant: "npm:^1.1.0"
-    tiny-warning: "npm:^1.0.3"
-  checksum: 10/9c7d889dbec303c09a7ef96887804f267501349840ae748b74130518fa034958f1a0cd70ac7d3d150821ab320d2ab9b2ac3dbef6e11dae121c0d4cff02959554
-  languageName: node
-  linkType: hard
-
-"@abstractswap/v4-sdk@workspace:sdks/v4-sdk":
+"@abstractswap/v4-sdk@workspace:*, @abstractswap/v4-sdk@workspace:sdks/v4-sdk":
   version: 0.0.0-use.local
   resolution: "@abstractswap/v4-sdk@workspace:sdks/v4-sdk"
   dependencies:
