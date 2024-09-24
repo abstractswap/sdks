@@ -1,7 +1,7 @@
 {
   "name": "@abstractswap/v3-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
     "uniswap",
     "ethereum"

@@ -1,7 +1,7 @@
 {
   "name": "@abstractswap/uniswapx-sdk",
   "author": "Uniswap",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
     "uniswap",
     "ethereum"

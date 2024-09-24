@@ -1,7 +1,7 @@
 {
   "name": "@abstractswap/sdk-core",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -51,6 +51,10 @@
   "release": {
     "extends": "semantic-release-monorepo",
     "branches": [
+      {
+        "name": "main",
+        "prerelease": false
+      },
       {
         "name": "abstract",
         "prerelease": false
