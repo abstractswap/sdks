@@ -27,7 +27,7 @@
     "g:check:deps:mismatch": "manypkg check",
     "g:build": "turbo run build",
     "g:lint": "turbo run lint",
-    "g:release": "turbo run release --concurrency=1 --continue",
+    "g:release": "turbo run release --concurrency=1",
     "g:test": "turbo run test",
     "g:typecheck": "turbo run typecheck",
     "sdk": "yarn workspace",
@@ -44,10 +44,12 @@
     "@abstractswap/v4-sdk": "workspace:*",
     "@abstractswap/router-sdk": "workspace:*",
     "@manypkg/cli@^0.19.2": "patch:@manypkg/cli@npm%3A0.19.2#./.yarn/patches/@manypkg-cli-npm-0.19.2-ea52ff91d4.patch",
-    "semantic-release": "^17.4.7",
-    "semantic-release-monorepo": "^7.0.5",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/release-notes-generator": "^9.0.3",
-    "@semantic-release/exec": "^5.0.0"
+    "semantic-release": "17.4.7",
+    "semantic-release-monorepo": "7.0.5",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/release-notes-generator": "9.0.3",
+    "@semantic-release/npm": "7.1.3",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/exec": "5.0.0"
   }
 }
