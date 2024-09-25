@@ -15563,16 +15563,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-plugin-decorators@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "semantic-release-plugin-decorators@npm:3.0.3"
+"semantic-release-plugin-decorators@npm:4.0.0":
+  version: 4.0.0
+  resolution: "semantic-release-plugin-decorators@npm:4.0.0"
   peerDependencies:
-    semantic-release: ">=11 < 20"
-  checksum: 10/84e79b01565279c9d004af5fd51499ca815e6a009844536f9589c743e05281f30faf899e8d9abe38bc42371bf568e9b4d9bfe5bf5b7496dc535db08a6997ed91
+    semantic-release: ">20"
+  checksum: 10/02b97a4b1221f3cb6d3915e5d02c7af773e528566a851d74b4aacc435b319cda505c1bcca313311eb6c2e203e3cace185c33586ccea1209637d1b0695df61fa2
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^20.1.0":
+"semantic-release@npm:20.1.3":
   version: 20.1.3
   resolution: "semantic-release@npm:20.1.3"
   dependencies:
