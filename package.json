@@ -6,14 +6,14 @@
     "@manypkg/cli": "^0.19.2",
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.7",
     "@typescript-eslint/eslint-plugin": "^5.62",
     "danger": "11.2.6",
     "eslint": "^7.8.0",
     "eslint-plugin-prettier": "^3.4.1",
     "husky": "^8.0.3",
-    "semantic-release": "^21.1.2",
-    "semantic-release-monorepo": "^7.0.5",
-    "semantic-release-plugin-decorators": "^5.0.0",
+    "semantic-release": "^21.0.7",
+    "semantic-release-monorepo": "^7.0.8",
     "syncpack": "^8.5.14",
     "turbo": "1.10.16"
   },
@@ -44,9 +44,9 @@
     "@abstractswap/v4-sdk": "workspace:*",
     "@abstractswap/router-sdk": "workspace:*",
     "@manypkg/cli@^0.19.2": "patch:@manypkg/cli@npm%3A0.19.2#./.yarn/patches/@manypkg-cli-npm-0.19.2-ea52ff91d4.patch",
-    "semantic-release": "^21.1.2",
-    "semantic-release-monorepo": "^7.0.5",
-    "semantic-release-plugin-decorators": "^5.0.0",
-    "@semantic-release/commit-analyzer": "^10.0.1"
+    "semantic-release": "^21.0.7",
+    "semantic-release-monorepo": "^7.0.8",
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^11.0.7"
   }
 }
