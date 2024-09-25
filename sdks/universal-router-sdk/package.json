@@ -24,7 +24,7 @@
     "lint:fix": "yarn prettier:fix && yarn forge:fix",
     "prettier": "prettier --check '**/*.ts' && prettier --check '**/*.json'",
     "prettier:fix": "prettier --write '**/*.ts' && prettier --write '**/*.json'",
-    "release": "semantic-release",
+    "release": "semantic-release -e ../../.releaserc.js",
     "test": "yarn test:hardhat && yarn test:forge",
     "test:forge": "yarn install:ur && forge test",
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
