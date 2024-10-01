@@ -8,7 +8,11 @@ export const FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 
 export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = V2_FACTORY_ADDRESSES
 
-export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
+export const MAINNET_INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
+export const ABSTRACT_INIT_CODE_HASH = '0x0100052734c4d75c5acbdc1a3a934476b46a054330ef6ea080b0f3241ef3f4c1'
+
+// TODO: implement dynamic function
+export const INIT_CODE_HASH = ABSTRACT_INIT_CODE_HASH
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
