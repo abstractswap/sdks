@@ -1,7 +1,7 @@
 import { getCreate2Address } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { keccak256, pack } from '@ethersproject/solidity'
-import { BigintIsh, CurrencyAmount, Percent, Price, sqrt, Token } from '@uniswap/sdk-core'
+import { BigintIsh, ChainId, computeZksyncCreate2Address, CurrencyAmount, Percent, Price, sqrt, Token } from '@uniswap/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 
@@ -25,17 +25,30 @@ export const computePairAddress = ({
   factoryAddress,
   tokenA,
   tokenB,
+  chainId,
 }: {
   factoryAddress: string
   tokenA: Token
   tokenB: Token
+  chainId?: ChainId
 }): string => {
   const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA] // does safety checks
-  return getCreate2Address(
-    factoryAddress,
-    keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
-    INIT_CODE_HASH
-  )
+
+  const salt = keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])])
+
+  switch (chainId) {
+    case ChainId.ZKSYNC:
+    case ChainId.ABSTRACT_TESTNET:
+      return computeZksyncCreate2Address(factoryAddress, INIT_CODE_HASH, salt)
+    default:
+      return getCreate2Address(
+        factoryAddress,
+        salt,
+        INIT_CODE_HASH
+      )
+  }
+
+  // return 
 }
 export class Pair {
   public readonly liquidityToken: Token
@@ -43,7 +56,7 @@ export class Pair {
 
   public static getAddress(tokenA: Token, tokenB: Token): string {
     const factoryAddress = FACTORY_ADDRESS_MAP[tokenA.chainId] ?? FACTORY_ADDRESS
-    return computePairAddress({ factoryAddress, tokenA, tokenB })
+    return computePairAddress({ factoryAddress, tokenA, tokenB, chainId: tokenA?.chainId })
   }
 
   public constructor(currencyAmountA: CurrencyAmount<Token>, tokenAmountB: CurrencyAmount<Token>) {
@@ -195,9 +208,9 @@ export class Pair {
     const percentAfterSellFees = calculateFotFees ? this.derivePercentAfterSellFees(inputAmount) : ZERO_PERCENT
     const inputAmountAfterTax = percentAfterSellFees.greaterThan(ZERO_PERCENT)
       ? CurrencyAmount.fromRawAmount(
-          inputAmount.currency,
-          percentAfterSellFees.multiply(inputAmount).quotient // fraction.quotient will round down by itself, which is desired
-        )
+        inputAmount.currency,
+        percentAfterSellFees.multiply(inputAmount).quotient // fraction.quotient will round down by itself, which is desired
+      )
       : inputAmount
 
     const inputAmountWithFeeAndAfterTax = JSBI.multiply(inputAmountAfterTax.quotient, _997)
@@ -215,9 +228,9 @@ export class Pair {
     const percentAfterBuyFees = calculateFotFees ? this.derivePercentAfterBuyFees(outputAmount) : ZERO_PERCENT
     const outputAmountAfterTax = percentAfterBuyFees.greaterThan(ZERO_PERCENT)
       ? CurrencyAmount.fromRawAmount(
-          outputAmount.currency,
-          outputAmount.multiply(percentAfterBuyFees).quotient // fraction.quotient will round down by itself, which is desired
-        )
+        outputAmount.currency,
+        outputAmount.multiply(percentAfterBuyFees).quotient // fraction.quotient will round down by itself, which is desired
+      )
       : outputAmount
     if (JSBI.equal(outputAmountAfterTax.quotient, ZERO)) {
       throw new InsufficientInputAmountError()
@@ -279,9 +292,9 @@ export class Pair {
     const percentAfterBuyFees = calculateFotFees ? this.derivePercentAfterBuyFees(outputAmount) : ZERO_PERCENT
     const outputAmountBeforeTax = percentAfterBuyFees.greaterThan(ZERO_PERCENT)
       ? CurrencyAmount.fromRawAmount(
-          outputAmount.currency,
-          JSBI.add(outputAmount.divide(percentAfterBuyFees).quotient, ONE) // add 1 for rounding up
-        )
+        outputAmount.currency,
+        JSBI.add(outputAmount.divide(percentAfterBuyFees).quotient, ONE) // add 1 for rounding up
+      )
       : outputAmount
 
     if (
@@ -306,9 +319,9 @@ export class Pair {
     const percentAfterSellFees = calculateFotFees ? this.derivePercentAfterSellFees(inputAmount) : ZERO_PERCENT
     const inputAmountBeforeTax = percentAfterSellFees.greaterThan(ZERO_PERCENT)
       ? CurrencyAmount.fromRawAmount(
-          inputAmount.currency,
-          JSBI.add(inputAmount.divide(percentAfterSellFees).quotient, ONE) // add 1 for rounding up
-        )
+        inputAmount.currency,
+        JSBI.add(inputAmount.divide(percentAfterSellFees).quotient, ONE) // add 1 for rounding up
+      )
       : inputAmount
     return [inputAmountBeforeTax, new Pair(inputReserve.add(inputAmount), outputReserve.subtract(outputAmount))]
   }
