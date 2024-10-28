@@ -41,6 +41,7 @@ export function computePoolAddress({
   switch (chainId) {
     case ChainId.ZKSYNC:
     case ChainId.ABSTRACT_TESTNET:
+    case ChainId.ZERION:
       return computeZksyncCreate2Address(factoryAddress, initCodeHash, salt)
     default:
       return getCreate2Address(factoryAddress, salt, initCodeHash)
