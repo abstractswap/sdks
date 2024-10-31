@@ -1,12 +1,10 @@
 name: Release
-
 on:
   push:
     branches:
       - main
       - beta
       - abstract
-
 jobs:
   release:
     name: Release
@@ -30,10 +28,15 @@ jobs:
           cache: yarn
           node-version: 20
 
-      - name: Install dependencies
+      - name: Clean install
         run: |
-          yarn config set nodeLinker node-modules
-          yarn install --immutable
+          rm -rf node_modules
+          rm -rf .yarn/cache
+          rm -rf .yarn/install-state.gz
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Build SDK's
         run: yarn g:build
 
@@ -42,4 +45,12 @@ jobs:
           NPM_CONFIG_USERCONFIG: /dev/null
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn g:release -- --debug --force
+          # Add these environment variables to handle workspace issues
+          NPM_CONFIG_WORKSPACE: "false"
+          NPM_CONFIG_WORKSPACES: "false"
+        run: |
+          # Disable workspaces for npm commands
+          npm config set workspaces false
+          npm config set workspace false
+          # Run the release command with no-workspaces flag
+          yarn g:release -- --debug --force --no-workspaces
