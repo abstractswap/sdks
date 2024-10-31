@@ -31,7 +31,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: yarn --immutable --no-workspaces
+        run: yarn install --immutable --focus
 
       - name: Build SDK's
         run: yarn g:build
