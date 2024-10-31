@@ -45,12 +45,11 @@ jobs:
           NPM_CONFIG_USERCONFIG: /dev/null
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          # Add these environment variables to handle workspace issues
           NPM_CONFIG_WORKSPACE: "false"
           NPM_CONFIG_WORKSPACES: "false"
         run: |
-          # Disable workspaces for npm commands
-          npm config set workspaces false
-          npm config set workspace false
-          # Run the release command with no-workspaces flag
-          yarn g:release -- --debug --force --no-workspaces
+          # Create temporary .npmrc
+          echo "workspace=false" > .npmrc
+          echo "workspaces=false" >> .npmrc
+          # Run release command without workspace flags
+          yarn g:release -- --debug --force
