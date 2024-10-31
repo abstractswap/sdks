@@ -1,5 +1,6 @@
 {
   "name": "@abstractswap/permit2-sdk",
+  "version": "0.0.2",
   "description": "An sdk for interacting with permit2.",
   "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [

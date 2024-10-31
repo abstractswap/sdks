@@ -1,5 +1,6 @@
 {
   "name": "@abstractswap/v2-sdk",
+  "version": "0.0.3",
   "description": "🛠 An SDK for building applications on top of Uniswap V2",
   "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
@@ -24,7 +25,7 @@
     "test": "tsdx test"
   },
   "dependencies": {
-    "@abstractswap/sdk-core": "0.0.1",
+    "@abstractswap/sdk-core": "0.0.3",
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/solidity": "^5.0.9",
     "tiny-invariant": "^1.1.0",
