@@ -1,5 +1,6 @@
 {
   "name": "@abstractswap/universal-router-sdk",
+  "version": "0.0.2",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
@@ -29,12 +30,12 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
-    "@abstractswap/permit2-sdk": "0.0.1",
-    "@abstractswap/router-sdk": "0.0.1",
-    "@abstractswap/sdk-core": "0.0.1",
-    "@abstractswap/v2-sdk": "0.0.1",
-    "@abstractswap/v3-sdk": "0.0.1",
-    "@abstractswap/v4-sdk": "0.0.1",
+    "@abstractswap/permit2-sdk": "0.0.2",
+    "@abstractswap/router-sdk": "0.0.2",
+    "@abstractswap/sdk-core": "0.0.2",
+    "@abstractswap/v2-sdk": "0.0.2",
+    "@abstractswap/v3-sdk": "0.0.2",
+    "@abstractswap/v4-sdk": "0.0.2",
     "@openzeppelin/contracts": "4.7.0",
     "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
