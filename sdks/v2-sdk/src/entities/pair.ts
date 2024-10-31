@@ -39,7 +39,7 @@ export const computePairAddress = ({
   switch (chainId) {
     case ChainId.ZKSYNC:
     case ChainId.ABSTRACT_TESTNET:
-    case ChainId.ZERION:
+    case ChainId.ZERO:
       return computeZksyncCreate2Address(factoryAddress, INIT_CODE_HASH, salt)
     default:
       return getCreate2Address(

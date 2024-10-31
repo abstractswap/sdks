@@ -261,7 +261,7 @@ const ABSTRACT_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x3914e72A73181a3EdB4dBC445cE2A01d480eacb1',
 }
 
-const ZERION_ADDRESSES: ChainAddresses = {
+const ZERO_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xA1160e73B63F322ae88cC2d8E700833e71D0b2a1',
   multicallAddress: '0x9CA4dcb2505fbf536F6c54AA0a77C79f4fBC35C0',
   quoterAddress: '0x22B98c8Bdfea8D928101eEC40Af634ff37804997',
@@ -295,7 +295,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.ZKSYNC]: ZKSYNC_ADDRESSES,
   [ChainId.ABSTRACT_TESTNET]: ABSTRACT_TESTNET_ADDRESSES,
-  [ChainId.ZERION]: ZERION_ADDRESSES,
+  [ChainId.ZERO]: ZERO_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
