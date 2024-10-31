@@ -1,4 +1,4 @@
-import { Currency, Ether, Token, TradeType } from "@uniswap/sdk-core";
+import { Currency, Ether, Token, TradeType } from "@abstractswap/sdk-core";
 import { BigNumber, constants, ethers } from "ethers";
 
 import { UnsignedPriorityOrderInfo } from "../order";
@@ -91,14 +91,16 @@ describe("PriorityOrderTrade", () => {
         },
       ],
     };
-    const ethOutputTrade = new PriorityOrderTrade<Currency, Currency, TradeType>(
-      {
-        currencyIn: USDC,
-        currenciesOut: [Ether.onChain(1)],
-        orderInfo: ethOutputOrderInfo,
-        tradeType: TradeType.EXACT_INPUT,
-      }
-    );
+    const ethOutputTrade = new PriorityOrderTrade<
+      Currency,
+      Currency,
+      TradeType
+    >({
+      currencyIn: USDC,
+      currenciesOut: [Ether.onChain(1)],
+      orderInfo: ethOutputOrderInfo,
+      tradeType: TradeType.EXACT_INPUT,
+    });
     expect(ethOutputTrade.outputAmount.currency).toEqual(Ether.onChain(1));
   });
 
@@ -114,14 +116,16 @@ describe("PriorityOrderTrade", () => {
         },
       ],
     };
-    const ethOutputTrade = new PriorityOrderTrade<Currency, Currency, TradeType>(
-      {
-        currencyIn: USDC,
-        currenciesOut: [Ether.onChain(1)],
-        orderInfo: ethOutputOrderInfo,
-        tradeType: TradeType.EXACT_INPUT,
-      }
-    );
+    const ethOutputTrade = new PriorityOrderTrade<
+      Currency,
+      Currency,
+      TradeType
+    >({
+      currencyIn: USDC,
+      currenciesOut: [Ether.onChain(1)],
+      orderInfo: ethOutputOrderInfo,
+      tradeType: TradeType.EXACT_INPUT,
+    });
     expect(ethOutputTrade.outputAmount.currency).toEqual(Ether.onChain(1));
   });
 

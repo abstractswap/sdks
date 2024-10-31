@@ -1,4 +1,9 @@
-import { Currency, CurrencyAmount, Price, TradeType } from "@uniswap/sdk-core";
+import {
+  Currency,
+  CurrencyAmount,
+  Price,
+  TradeType,
+} from "@abstractswap/sdk-core";
 
 import { UnsignedPriorityOrder, UnsignedPriorityOrderInfo } from "../order";
 
@@ -11,10 +16,12 @@ export class PriorityOrderTrade<
 > {
   public readonly tradeType: TTradeType;
   public readonly order: UnsignedPriorityOrder;
-  public readonly expectedAmounts: {
-    expectedAmountIn: string;
-    expectedAmountOut: string;
-  } | undefined;
+  public readonly expectedAmounts:
+    | {
+        expectedAmountIn: string;
+        expectedAmountOut: string;
+      }
+    | undefined;
 
   private _inputAmount: CurrencyAmount<TInput> | undefined;
   private _outputAmounts: CurrencyAmount<TOutput>[] | undefined;
@@ -84,13 +91,10 @@ export class PriorityOrderTrade<
     return amounts;
   }
 
-  private _firstNonFeeOutputAmount:
-    | CurrencyAmount<TOutput>
-    | undefined;
+  private _firstNonFeeOutputAmount: CurrencyAmount<TOutput> | undefined;
 
   private getFirstNonFeeOutputAmount(): CurrencyAmount<TOutput> {
-    if (this._firstNonFeeOutputAmount)
-      return this._firstNonFeeOutputAmount;
+    if (this._firstNonFeeOutputAmount) return this._firstNonFeeOutputAmount;
 
     if (this.order.info.outputs.length === 0) {
       throw new Error("there must be at least one output token");
@@ -108,11 +112,10 @@ export class PriorityOrderTrade<
       );
     }
 
-    const amount =
-      CurrencyAmount.fromRawAmount(
-        currencyOut,
-        output.amount.toString()
-      );
+    const amount = CurrencyAmount.fromRawAmount(
+      currencyOut,
+      output.amount.toString()
+    );
 
     this._firstNonFeeOutputAmount = amount;
     return amount;
