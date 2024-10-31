@@ -42,19 +42,26 @@ jobs:
       - name: Build SDK's
         run: yarn g:build
 
-      - name: Setup NPM Authentication
+      - name: Setup NPM
         run: |
           # Remove any existing npmrc files
           rm -f ~/.npmrc
           rm -f .npmrc
 
-          # Create new npmrc with authentication
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          echo "registry=https://registry.npmjs.org/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
+          # Create new npmrc with authentication and workspace config
+          cat << EOF > .npmrc
+          //registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
+          registry=https://registry.npmjs.org/
+          always-auth=true
+          workspaces=false
+          ignore-workspace-root-check=true
+          EOF
 
-          # Set proper permissions
           chmod 600 .npmrc
+
+          # Disable workspace features globally
+          npm config set workspaces false
+          npm config set workspace false
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -62,4 +69,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn g:release -- --debug --force
+        run: |
+          # Force semantic-release to use local .npmrc
+          export NPM_CONFIG_USERCONFIG="$PWD/.npmrc"
+
+          # Run release for each package separately
+          for pkg in packages/*; do
+            if [ -f "$pkg/package.json" ]; then
+              echo "Processing $pkg..."
+              cd $pkg
+              # Create package-specific .npmrc
+              cp ../../.npmrc .
+              # Run release
+              yarn semantic-release --debug --no-ci
+              cd ../..
+            fi
+          done
