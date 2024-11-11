@@ -298,12 +298,12 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
-        address: 'NA',
-        creationBlock: 0,
+        address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
+        creationBlock: 5369968,
       },
       [UniversalRouterVersion.V2_0]: {
-        address: 'NA',
-        creationBlock: 0,
+        address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
+        creationBlock: 5369968,
       },
     },
   },
