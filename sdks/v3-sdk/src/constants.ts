@@ -12,8 +12,9 @@ export function poolInitCodeHash(chainId?: ChainId): string {
     case ChainId.ZKSYNC:
     case ChainId.ABSTRACT_TESTNET:
     case ChainId.ZERO:
-    case ChainId.BOB:
       return '0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed'
+    case ChainId.BOB:
+      return '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
     default:
       return POOL_INIT_CODE_HASH
   }
