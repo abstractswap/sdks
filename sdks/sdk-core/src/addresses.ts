@@ -50,6 +50,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
   [ChainId.ABSTRACT_TESTNET]: '0xcD87b21B627cB2d695FBc2101cf64F8007F25E07',
+  [ChainId.ZERO]: '0x1B4427e212475B12e62f0f142b8AfEf3BC18B559',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -66,6 +67,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
   [ChainId.ABSTRACT_TESTNET]: '0x07551c0Daf6fCD9bc2A398357E5C92C139724Ef3',
+  [ChainId.ZERO]: '0xC15dce85DEdb0Eaf4402bB3E52A34f7ae1fce7e1',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
