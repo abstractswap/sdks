@@ -285,12 +285,12 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xAc98B49576B1C892ba6BFae08fE1BB0d80Cf599c',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
-        address: '0xeafee09bc61dcaaf3ae9d1e83698e1b366989920',
-        creationBlock: 912,
+        address: '0xF93Ce7C55073aE244f4a5C810924D790C65F742E',
+        creationBlock: 12528,
       },
       [UniversalRouterVersion.V2_0]: {
-        address: '0xeafee09bc61dcaaf3ae9d1e83698e1b366989920',
-        creationBlock: 912,
+        address: '0xF93Ce7C55073aE244f4a5C810924D790C65F742E',
+        creationBlock: 12528,
       },
     },
   },
