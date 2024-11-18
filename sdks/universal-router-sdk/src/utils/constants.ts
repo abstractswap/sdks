@@ -114,6 +114,21 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x5aea5775959fbc2557cc8789bc1bf90a239d9a91',
     creationBlock: 12640979,
   },
+  [11124]: {
+    router: '0xE8a1375CC84D769F1A7395996008478f3249F67b',
+    weth: '0x9EDCde0257F2386Ce177C3a7FCdd97787F0D841d',
+    creationBlock: 356887,
+  },
+  [543210]: {
+    router: '0xF93Ce7C55073aE244f4a5C810924D790C65F742E',
+    weth: '0xAc98B49576B1C892ba6BFae08fE1BB0d80Cf599c',
+    creationBlock: 12528,
+  },
+  [60808]: {
+    router: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
+    weth: '0x4200000000000000000000000000000000000006',
+    creationBlock: 5369968,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
