@@ -1,6 +1,6 @@
 {
   "name": "@abstractswap/v4-sdk",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "⚒️ An SDK for building applications on top of Uniswap V4",
   "repository": "https://github.com/abstractswap/sdks.git",
   "keywords": [
@@ -25,8 +25,8 @@
     "test": "tsdx test"
   },
   "dependencies": {
-    "@abstractswap/sdk-core": "0.0.3",
-    "@abstractswap/v3-sdk": "0.0.3",
+    "@abstractswap/sdk-core": "0.0.5",
+    "@abstractswap/v3-sdk": "0.0.5",
     "@ethersproject/solidity": "^5.0.9",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
