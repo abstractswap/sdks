@@ -16,6 +16,7 @@ import {
   MINIMUM_LIQUIDITY,
   ONE,
   ONE_HUNDRED_PERCENT,
+  pairInitCodeHash,
   ZERO,
   ZERO_PERCENT,
 } from '../constants'
@@ -36,11 +37,13 @@ export const computePairAddress = ({
 
   const salt = keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])])
 
+  const initCodeHash = pairInitCodeHash(chainId)
+
   switch (chainId) {
     case ChainId.ZKSYNC:
     case ChainId.ABSTRACT_TESTNET:
     case ChainId.ZERO:
-      return computeZksyncCreate2Address(factoryAddress, INIT_CODE_HASH, salt)
+      return computeZksyncCreate2Address(factoryAddress, initCodeHash, salt)
     default:
       return getCreate2Address(
         factoryAddress,

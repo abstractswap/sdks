@@ -58,6 +58,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.ABSTRACT_TESTNET]: '0xcD87b21B627cB2d695FBc2101cf64F8007F25E07',
   [ChainId.WORLDCHAIN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
   [ChainId.ASTROCHAIN_SEPOLIA]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+  [ChainId.ZERO]: '0x1B4427e212475B12e62f0f142b8AfEf3BC18B559',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -77,6 +78,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.ABSTRACT_TESTNET]: '0x07551c0Daf6fCD9bc2A398357E5C92C139724Ef3',
   [ChainId.WORLDCHAIN]: '0x541aB7c31A119441eF3575F6973277DE0eF460bd',
   [ChainId.ASTROCHAIN_SEPOLIA]: '0x920b806E40A00E02E7D2b94fFc89860fDaEd3640',
+  [ChainId.ZERO]: '0xD7C05A08cB43e99d596B606A1c03EA2F21289d94',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -313,6 +315,17 @@ const ASTROCHAIN_SEPOLIA_ADDRESSES: ChainAddresses = {
   v4QuoterAddress: '0x2cfa87651D3AB05Bc59E325E5eaC8495CF34cE55',
 }
 
+const BOB_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xcb2436774C3e191c85056d248EF4260ce5f27A9D',
+  multicallAddress: '0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435',
+  quoterAddress: '0x6Aa54a43d7eEF5b239a18eed3Af4877f46522BCA',
+  // Missing migrator address for BOB, using a place holder for now
+  v3MigratorAddress: '0x0000000000000000000000000000000000000000',
+  nonfungiblePositionManagerAddress: '0x743E03cceB4af2efA3CC76838f6E8B50B63F184c',
+  tickLensAddress: '0xB3309C48F8407651D918ca3Da4C45DE40109E641',
+  swapRouter02Address: '0x807F4E281B7A3B324825C64ca53c69F0b418dE40',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -340,6 +353,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZERO]: ZERO_ADDRESSES,
   [ChainId.WORLDCHAIN]: WORLDCHAIN_ADDRESSES,
   [ChainId.ASTROCHAIN_SEPOLIA]: ASTROCHAIN_SEPOLIA_ADDRESSES,
+  [ChainId.BOB]: BOB_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
