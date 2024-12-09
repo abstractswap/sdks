@@ -320,6 +320,19 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  [360]: {
+    weth: '0x4200000000000000000000000000000000000006',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0xb1650016B5361F343aeBEf975e359A902796134E',
+        creationBlock: 6045171,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0xb1650016B5361F343aeBEf975e359A902796134E',
+        creationBlock: 6045171,
+      },
+    },
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (version: UniversalRouterVersion, chainId: number): string => {

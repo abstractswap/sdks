@@ -295,6 +295,15 @@ const CYBER_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0x6cb5504B957625d01a88db4b27EAaFD5Ae4422b6',
   swapRouter02Address: '0xdB4f0Db998BC1d429499fB11638fd3705E8e60Cc',
 }
+const SHAPE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xeCf9288395797Da137f663a7DD0F0CDF918776F8',
+  multicallAddress: '0x356A450B32f5030ae7083702b86FaFbBe7490411',
+  quoterAddress: '0x5C5D397c5C5146559B709534dCDD81cB66617bBF',
+  v3MigratorAddress: '0x584d740230343ED1Ac23A54Dc13f0a5213d5A2B4',
+  nonfungiblePositionManagerAddress: '0xD29D14d0DbE2485E9f89305d5310CcD0D7a6DCb6',
+  tickLensAddress: '0x4372c608a10b760C12E82029E5D4445721Cf4A51',
+  swapRouter02Address: '0x32f6dCB405376B07b9D3d4C03015A5e329dD7D18',
+}
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -323,6 +332,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZERO]: ZERO_ADDRESSES,
   [ChainId.BOB]: BOB_ADDRESSES,
   [ChainId.CYBER]: CYBER_ADDRESSES,
+  [ChainId.SHAPE]: SHAPE_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
