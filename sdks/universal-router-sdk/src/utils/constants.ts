@@ -324,12 +324,12 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
-        address: '0xb1650016B5361F343aeBEf975e359A902796134E',
-        creationBlock: 6045171,
+        address: '0x663EfF39dd168A7Eb4016a237b16A8aB86901856',
+        creationBlock: 6177818,
       },
       [UniversalRouterVersion.V2_0]: {
-        address: '0xb1650016B5361F343aeBEf975e359A902796134E',
-        creationBlock: 6045171,
+        address: '0x663EfF39dd168A7Eb4016a237b16A8aB86901856',
+        creationBlock: 6177818,
       },
     },
   },
