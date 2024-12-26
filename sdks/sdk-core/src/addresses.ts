@@ -294,7 +294,7 @@ const ZERO_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x05eead9625966847d60774Cf2c3b004AfBC45314',
   nonfungiblePositionManagerAddress: '0x5b15468dFD83cF9192082d4510034c9431bb05eB',
   tickLensAddress: '0x9c7d30F93812f143b6Efa673DB8448EfCB9f747E',
-  swapRouter02Address: '0xD936711eABD2Ce52747d7122757316C7DFe3599b',
+  swapRouter02Address: '0x9f2d5e890FA9Cc44D21E3B4A4eCaD87358592912',
 }
 const WORLDCHAIN_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x7a5028BDa40e7B173C278C5342087826455ea25a',
@@ -368,7 +368,7 @@ const REDSTONE_GARNET_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x32d8273909300339d01c097E3A79eA522C0CCb47',
   nonfungiblePositionManagerAddress: '0xa46F04F08Ea3AA4e1D22dFEe7f1C014C85Fc2EF9',
   tickLensAddress: '0xe0e63e8a518b001A36FF8ac9F910CeC699D79c5A',
-  swapRouter02Address: '0xfB60447BF76d38A36A140a0e427C3f0787Eb3e80'
+  swapRouter02Address: '0xfB60447BF76d38A36A140a0e427C3f0787Eb3e80',
 }
 
 const REDSTONE_ADDRESSES: ChainAddresses = {
@@ -378,7 +378,7 @@ const REDSTONE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0xa46F04F08Ea3AA4e1D22dFEe7f1C014C85Fc2EF9',
   nonfungiblePositionManagerAddress: '0x6Cdd7Ad7a1CacCe6163ed26BBA22E0A04dF41AD8',
   tickLensAddress: '0x600749AA1c493aB8656AD3aeFd2Fd645C7Ba2CdA',
-  swapRouter02Address: '0xEBe5eAC00Dbbe2b26D1112399d3795f865cD268e'
+  swapRouter02Address: '0xEBe5eAC00Dbbe2b26D1112399d3795f865cD268e',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
