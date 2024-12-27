@@ -12,14 +12,15 @@ export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = V2_FACTORY_ADD
 export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
 
 export function pairInitCodeHash(chainId?: ChainId): string {
-    switch (chainId) {
-        case ChainId.ABSTRACT_TESTNET:
-            return '0x0100052734c4d75c5acbdc1a3a934476b46a054330ef6ea080b0f3241ef3f4c1'
-        case ChainId.ZERO:
-            return '0x010005279097a5c2093daa79c75905339804c21bc53dc3391ea5440ae1191045'
-        default:
-            return INIT_CODE_HASH
-    }
+  switch (chainId) {
+    case ChainId.ABSTRACT_TESTNET:
+    case ChainId.ABSTRACT_MAINNET:
+      return '0x0100065f2f2a556816a482652f101ddda2947216a5720dd91a79c61709cbf2b8'
+    case ChainId.ZERO:
+      return '0x010005279097a5c2093daa79c75905339804c21bc53dc3391ea5440ae1191045'
+    default:
+      return INIT_CODE_HASH
+  }
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
