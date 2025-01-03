@@ -15,6 +15,8 @@ export function pairInitCodeHash(chainId?: ChainId): string {
   switch (chainId) {
     case ChainId.ABSTRACT_TESTNET:
       return '0x0100052734c4d75c5acbdc1a3a934476b46a054330ef6ea080b0f3241ef3f4c1'
+    case ChainId.ABSTRACT_MAINNET:
+      return '0x0100065f2f2a556816a482652f101ddda2947216a5720dd91a79c61709cbf2b8'
     case ChainId.ZERO:
       return '0x010005279097a5c2093daa79c75905339804c21bc53dc3391ea5440ae1191045'
     default:
