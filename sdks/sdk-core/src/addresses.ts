@@ -55,6 +55,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.SHAPE]: '0xb411eAF2f2070822B26E372E3Ea63c5060BA45E6',
   [ChainId.INK]: '0xfe57A6BA1951F69aE2Ed4abe23e0f095DF500C04',
   [ChainId.ABSTRACT_MAINNET]: '0x566d7510dEE58360a64C9827257cF6D0Dc43985E',
+  [ChainId.ANIME_TESTNET]: '0x69f2888491eA07BB10936aA110A5E0481122efd3',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -76,6 +77,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.SHAPE]: '0x1f79AD8a85f570514e06Ff51BBffD540cCaB1249',
   [ChainId.INK]: '0xB3FB126ACDd5AdCA2f50Ac644a7a2303745f18b4',
   [ChainId.ABSTRACT_MAINNET]: '0xad1eCa41E6F772bE3cb5A48A6141f9bcc1AF9F7c',
+  [ChainId.ANIME_TESTNET]: '0x4F9f253Cc262fC82baD2d25BC1Ea7c67544535e3',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -351,6 +353,16 @@ const ABSTRACT_MAINNET: ChainAddresses = {
   swapRouter02Address: '0x7712FA47387542819d4E35A23f8116C90C18767C',
 }
 
+const ANIME_TESTNET: ChainAddresses = {
+  v3CoreFactoryAddress: '0xE6eA2A148c13893a8eEDD57c75043055a8924C5f',
+  multicallAddress: '0x208960B3Bb6fa00bDcfa2cc9CdB8D412bbCe9f64',
+  quoterAddress: '0x623d6b580eAeCbfC22E3ced2233D5598CBBC37F0',
+  v3MigratorAddress: '0xc738ADA94944EC1d86C09c7204A428de35fb1CbF',
+  nonfungiblePositionManagerAddress: '0x1cFbE77bb62CEca3778769655dEEC3ECC6AaaDf7',
+  tickLensAddress: '0x086cD67c39646E95C1B9c4af4694Aa51A1a7636f',
+  swapRouter02Address: '0x1Ed23A4791a0D1E112a67f5F42fd61d03b9dc261',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -383,6 +395,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.REDSTONE_GARNET]: REDSTONE_GARNET_ADDRESSES,
   [ChainId.REDSTONE]: REDSTONE_ADDRESSES,
   [ChainId.ABSTRACT_MAINNET]: ABSTRACT_MAINNET,
+  [ChainId.ANIME_TESTNET]: ANIME_TESTNET,
 }
 
 /* V3 Contract Addresses */
