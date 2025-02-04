@@ -164,6 +164,11 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x8f3e2785985aa4005c63f97f7cc89ce91a948267',
     creationBlock: 1654941,
   },
+  [34443]: {
+    router: '0x1B94dcAA28E947CEEA8140C77277F0b1d4899713',
+    weth: '0x4200000000000000000000000000000000000006',
+    creationBlock: 19224890,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
