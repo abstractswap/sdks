@@ -1,0 +1,25 @@
+diff --git a/dist/chains.d.ts b/dist/chains.d.ts
+index 45d6e6cd2bde5ff0e54f69d73bcaf5ba89a8201f..e293c801b600834fdb8228dd452490445e489dba 100644
+--- a/dist/chains.d.ts
++++ b/dist/chains.d.ts
+@@ -22,7 +22,19 @@ export declare enum ChainId {
+     ZORA_SEPOLIA = 999999999,
+     ROOTSTOCK = 30,
+     BLAST = 81457,
+-    ZKSYNC = 324
++    ZKSYNC = 324,
++    ABSTRACT_TESTNET = 11124,
++    ABSTRACT_MAINNET = 2741,
++    ZERO = 543210,
++    BOB = 60808,
++    CYBER = 7560,
++    SHAPE = 360,
++    INK = 57073,
++    REDSTONE_GARNET = 17069,
++    REDSTONE = 690,
++    ANIME = 69000,
++    ANIME_TESTNET = 6900,
++    MODE = 34443,
+ }
+ export declare const SUPPORTED_CHAINS: readonly [ChainId.MAINNET, ChainId.OPTIMISM, ChainId.OPTIMISM_GOERLI, ChainId.OPTIMISM_SEPOLIA, ChainId.ARBITRUM_ONE, ChainId.ARBITRUM_GOERLI, ChainId.ARBITRUM_SEPOLIA, ChainId.POLYGON, ChainId.POLYGON_MUMBAI, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.CELO_ALFAJORES, ChainId.CELO, ChainId.BNB, ChainId.AVALANCHE, ChainId.BASE, ChainId.BASE_GOERLI, ChainId.ZORA, ChainId.ZORA_SEPOLIA, ChainId.ROOTSTOCK, ChainId.BLAST, ChainId.ZKSYNC];
+ export declare type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number];

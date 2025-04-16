@@ -36,6 +36,9 @@
     "sdks/uniswapx-sdk/integration"
   ],
   "resolutions": {
-    "@manypkg/cli@^0.19.2": "patch:@manypkg/cli@npm%3A0.19.2#./.yarn/patches/@manypkg-cli-npm-0.19.2-ea52ff91d4.patch"
+    "@manypkg/cli@^0.19.2": "patch:@manypkg/cli@npm%3A0.19.2#./.yarn/patches/@manypkg-cli-npm-0.19.2-ea52ff91d4.patch",
+    "@uniswap/sdk-core@^5.3.1": "patch:@uniswap/sdk-core@npm%3A5.3.1#./.yarn/patches/@uniswap-sdk-core-npm-5.3.1-51852d603f.patch",
+    "@uniswap/sdk-core@^5.0.0": "patch:@uniswap/sdk-core@npm%3A5.3.1#./.yarn/patches/@uniswap-sdk-core-npm-5.3.1-51852d603f.patch",
+    "@uniswap/sdk-core@^5.3.0": "patch:@uniswap/sdk-core@npm%3A5.3.1#./.yarn/patches/@uniswap-sdk-core-npm-5.3.1-51852d603f.patch"
   }
 }

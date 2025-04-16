@@ -385,6 +385,19 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  [69000]: {
+    weth: '0x164906a76f1A2Ea933366c446AE0Ec6a37062c42',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0xad41BA875678975676C5Ed3a83aCD5a3Ab3215b7',
+        creationBlock: 58013,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0xad41BA875678975676C5Ed3a83aCD5a3Ab3215b7',
+        creationBlock: 58013,
+      },
+    },
+  },
   [6900]: {
     weth: '0x8f3e2785985aa4005c63f97f7cc89ce91a948267',
     routerConfigs: {

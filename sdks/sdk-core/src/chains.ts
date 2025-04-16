@@ -32,8 +32,9 @@ export enum ChainId {
   INK = 57073,
   REDSTONE_GARNET = 17069,
   REDSTONE = 690,
+  ANIME = 69000,
   ANIME_TESTNET = 6900,
-  MODE = 34443
+  MODE = 34443,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -68,8 +69,9 @@ export const SUPPORTED_CHAINS = [
   ChainId.REDSTONE_GARNET,
   ChainId.REDSTONE,
   ChainId.ABSTRACT_MAINNET,
+  ChainId.ANIME,
   ChainId.ANIME_TESTNET,
-  ChainId.MODE
+  ChainId.MODE,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -83,5 +85,6 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
-  ANIME = 'ANIME'
+  ANIME = 'ANIME',
+  ANIME_TESTNET = 'ANIME',
 }
